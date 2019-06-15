@@ -10,14 +10,14 @@ export class InMemoryDataService implements InMemoryDbService {
   }
   createDb() {
     var tournaments: any = [
-      { id: 2, hostid: 'host2', tournamentName: "host2tournamentName", year: "2019" },
-      { id: 1, hostid: 'host1', tournamentName: "host1tournamentName", year: "2019" },
-      { id: 3, hostid: 'host1', tournamentName: "host1tournamentName", year: "2019" },
-      { id: 4, hostid: 'host3', tournamentName: "host3tournamentName", year: "2019" },
-      { id: 5, hostid: 'host3', tournamentName: "host3tournamentName", year: "2019" },
-      { id: 6, hostid: 'host1', tournamentName: "host1tournamentName", year: "2019" },
-      { id: 7, hostid: 'host2', tournamentName: "host2tournamentName", year: "2019" },
-      { id: 8, hostid: 'host1', tournamentName: "host1Name", year: "2019" }
+      { id: 2, hostid: 'host2', tournamentName: "Tournament2", year: "2019" },
+      { id: 1, hostid: 'host1', tournamentName: "Tournament3", year: "2019" },
+      { id: 3, hostid: 'host1', tournamentName: "Tournament4", year: "2019" },
+      { id: 4, hostid: 'host3', tournamentName: "Tournament1", year: "2019" },
+      { id: 5, hostid: 'host3', tournamentName: "Tournament5", year: "2019" },
+      { id: 6, hostid: 'host1', tournamentName: "Tournament6", year: "2019" },
+      { id: 7, hostid: 'host2', tournamentName: "Tournament7", year: "2019" },
+      { id: 8, hostid: 'host1', tournamentName: "Tournament8", year: "2019" }
     ];
     const fixtures: any = [
       { date: "18/3/1993", id: "1", team1: "T1", team2: "T2", status: "done", tournamentId: "1", statusDetails: "T1 won by 10 runs", scoreCardId: 1 },

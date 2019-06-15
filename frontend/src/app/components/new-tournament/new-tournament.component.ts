@@ -28,7 +28,6 @@ export class NewTournamentComponent implements OnInit {
     }
     console.log(this.formFeilds)
     this.tournamentDetailsService.addTournament(this.formFeilds).subscribe(data=>{
-      console.log("add--",data);
     });
   }
 

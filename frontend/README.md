@@ -25,3 +25,32 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
+## Problem at hand
+
+No way to go back and see score board or points table of Box Cricket matches unlike IPL or ICC cricket world cup.
+No internal application to host and schedule matches.
+Tournaments like Cybage Box cricket tournament, Pool tournament, Table Tennis Tournament or Badminton Tournament
+
+## What our Idea Describes
+
+Host tournaments like Cybage Box Cricket, Pool Tournament, Table Tennis etc.
+HR/Admin can create fixtures/draws, add score to the match
+Cybagians can see score card, match statistics and Point Table
+
+
+## Technology Stack
+
+Angular 6
+Bootstrap
+HTML
+CSS
+Java REST API
+
+
+## Possible Improvements
+
+Can be scaled to include Pool Tournament, Table Tennis Tournament, Badminton Tournament
+Can be scaled to give Live score to sports lover

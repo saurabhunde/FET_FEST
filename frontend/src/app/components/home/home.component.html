@@ -1,11 +1,15 @@
+
+<div class="container">
 <article class="wrapper">
   <section class="header">
   </section>
-  <section class="login" *ngIf="!tournamentDetailsService.host">
-    <form (submit)="hostLogin()" [formGroup]="loginForm">
-        Host ID : <input type="text" formControlName="hostId" ><br/>
-        Password : <input type="text" formControlName="password" >
-        <button type="submit">Login as host</button>
+
+<div class="container">
+  <section class="login container" *ngIf="!tournamentDetailsService.host">
+    <form class="form-group" (submit)="hostLogin()" [formGroup]="loginForm">
+        Host ID : <input class="form-control" type="text" formControlName="hostId" placeholder="Enter Host ID" ><br/>
+        Password : <input class="form-control" type="password" formControlName="password" placeholder="Enter Password"> <br>
+        <button class="btn btn-info form-control" type="submit">Login as host</button>
     </form>
     <br/><br/>
   </section>
@@ -17,6 +21,7 @@
       You have no running tournaments
     </div>
   </section>
+</div>
   
   <div *ngFor="let tournament of tournaments;">
       <a routerLink="/tournament-details/{{tournament.id}}">Tournament no {{tournament.id}}</a>
@@ -38,3 +43,4 @@
 </table>
   
 </article>
+</div>

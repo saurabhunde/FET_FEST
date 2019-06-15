@@ -21,7 +21,7 @@ export class NewTournamentComponent implements OnInit {
 
   public addTournament(): void {
     this.formFeilds = {
-      id: Math.random() * 100,
+      id: Math.floor(Math.random() * 100),
       hostid: 'host1',
       tournamentName: this.tournamentForm.value.tournamentName,
       year: this.tournamentForm.value.year

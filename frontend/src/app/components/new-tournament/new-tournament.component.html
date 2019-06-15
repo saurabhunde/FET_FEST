@@ -1,7 +1,11 @@
+<div class="container">
 
-<form (submit)="addTournament()" [formGroup]="tournamentForm">
-  <input type="text" placeholder="tournament name" formControlName="tournamentName">
-  <input type="text" placeholder="tournament Year" formControlName="year">
-  <button type="submit" class="btn btn-success">Submit</button>
+<form class="form-group" (submit)="addTournament()" [formGroup]="tournamentForm">
+  <br><br>
+  <input class="form-control" type="text" placeholder="Enter name...." formControlName="tournamentName"> <br><br>
+  <input class="form-control" type="text" placeholder="Enter Time..." formControlName="year"> <br> <br>
+  <button type="submit" class="btn btn-success">Submit</button> <br>
 </form>
 <a routerLink="/home">Home</a>
+
+</div>

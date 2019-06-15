@@ -21,14 +21,13 @@ export class NewTournamentComponent implements OnInit {
 
   public addTournament(): void {
     this.formFeilds = {
-      id: Math.random() * 100,
+      id: Math.random() * 10,
       hostid: 'host1',
       tournamentName: this.tournamentForm.value.tournamentName,
       year: this.tournamentForm.value.year
     }
     console.log(this.formFeilds)
     this.tournamentDetailsService.addTournament(this.formFeilds).subscribe(data=>{
-      console.log("add--",data);
     });
   }
 

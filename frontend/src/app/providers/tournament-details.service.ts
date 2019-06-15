@@ -22,7 +22,7 @@ export class TournamentDetailsService {
   public getPointsTable(id: string): Observable<Object[]> {
     return this.http.get<Object[]>("api/pointsTable/?tournamentId=" + id);
   }
-  public addTournament(obj: any): any {
+  public addTournament(obj: any): Observable<Object>{
     console.log(obj);
     //obj.id = Math.random() * 100;
     //obj.hostId = "host1";

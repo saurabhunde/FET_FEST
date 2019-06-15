@@ -27,7 +27,9 @@ export class NewTournamentComponent implements OnInit {
       year: this.tournamentForm.value.year
     }
     console.log(this.formFeilds)
-    this.tournamentDetailsService.addTournament(this.formFeilds);
+    this.tournamentDetailsService.addTournament(this.formFeilds).subscribe(data=>{
+      console.log("add--",data);
+    });
   }
 
 }

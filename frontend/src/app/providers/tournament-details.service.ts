@@ -27,8 +27,6 @@ export class TournamentDetailsService {
     //obj.id = Math.random() * 100;
     //obj.hostId = "host1";
     return this.http.post("api/tournaments/", obj);
-    console.log(obj);
-
   }
 
   public getScoreCard(id: string): Observable<Object[]> {

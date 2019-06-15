@@ -9,7 +9,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  private tournaments:any;
+  private tournaments:any [];
+  public fixtures;
   public loginForm = this.fb.group({
     hostId:['',Validators.required],
     password:['',Validators.required]
@@ -18,6 +19,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.getTournaments();
+    this.getFixtures();
   }
   public hostLogin():void{
     if (this.loginForm.invalid) return;
@@ -31,10 +33,23 @@ export class HomeComponent implements OnInit {
     this.getTournaments();
   }
   private getTournaments(){
+    console.log(this)
     this.tournamentDetailsService.getTournaments().subscribe( data => {
+      console.log("data", data)
       this.tournaments = data;
+      
     });
   }
+
+  private getFixtures(){
+    console.log(this)
+    this.tournamentDetailsService.getFixtures().subscribe( data => {
+      console.log("data", data)
+      this.fixtures = data;
+      
+    });
+  }
+
 }
 
 interface Host {

@@ -1,6 +1,7 @@
 
 <form (submit)="addTournament()" [formGroup]="tournamentForm">
   <input type="text" placeholder="tournament name" formControlName="tournamentName">
-  <input type="text" placeholder="tournament Year" formControlName="tournamentYear">
+  <input type="text" placeholder="tournament Year" formControlName="year">
   <button type="submit" class="btn btn-success">Submit</button>
 </form>
+<a routerLink="/home">Home</a>

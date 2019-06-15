@@ -11,7 +11,9 @@
                     </tr>
                     <tr *ngFor="let fixture of fixtures;">
                         <td>{{fixture.date}}</td>
-                        <td>{{fixture.team1}} vs {{fixture.team2}}</td>
+                        <td>
+                            <a routerLink="/score-card/{{fixture.scoreCardId}}">{{fixture.team1}} vs
+                                {{fixture.team2}}</a></td>
                         <td>{{fixture.statusDetails}}</td>
                         <td *ngIf="tournamentDetailsService.host">
                             <button>{{fixture.status == 'not started' ? 'Add' : 'Edit'}}</button>

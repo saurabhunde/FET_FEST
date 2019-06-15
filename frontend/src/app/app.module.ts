@@ -13,7 +13,8 @@ import { EnterMatchResultComponent } from './components/enter-match-result/enter
 import { InMemoryDataService }  from './providers/in-memory-data.service';
 import { PointsTableComponent } from './components/points-table/points-table.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { NewTournamentComponent } from "./components/new-tournament/new-tournament.component"
+import { NewTournamentComponent } from "./components/new-tournament/new-tournament.component";
+import { ScoreCardComponent } from './components/score-card/score-card.component'
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { NewTournamentComponent } from "./components/new-tournament/new-tourname
     ScheduleTournamentComponent,
     EnterMatchResultComponent,
     PointsTableComponent,
-    NewTournamentComponent
+    NewTournamentComponent,
+    ScoreCardComponent
   ],
   imports: [
     BrowserModule,

@@ -9,17 +9,25 @@ import { TournamentDetailsService } from '../../providers/tournament-details.ser
   styleUrls: ['./new-tournament.component.css']
 })
 export class NewTournamentComponent implements OnInit {
+  public formFeilds;
   public tournamentForm = this.fb.group({
-    tournamentName:['',Validators.required],
-    tournamentYear:['',Validators.required]
+    tournamentName: ['', Validators.required],
+    year: ['', Validators.required]
   });
-  constructor(private http: HttpClient, private fb:FormBuilder,public tournamentDetailsService:TournamentDetailsService) { }
+  constructor(private http: HttpClient, private fb: FormBuilder, public tournamentDetailsService: TournamentDetailsService) { }
 
   ngOnInit() {
   }
 
-  public addTournament():void {
-  this.tournamentDetailsService.addTournament(this.tournamentForm.value);  
+  public addTournament(): void {
+    this.formFeilds = {
+      id: Math.random() * 100,
+      hostid: 'host1',
+      tournamentName: this.tournamentForm.value.tournamentName,
+      year: this.tournamentForm.value.year
+    }
+    console.log(this.formFeilds)
+    this.tournamentDetailsService.addTournament(this.formFeilds);
   }
 
 }

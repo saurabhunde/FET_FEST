@@ -1,0 +1,16 @@
+<div *ngIf="scoreCard">
+    <h2> SCORECARD</h2>
+<table>
+    <tr>
+        <td>{{scoreCard.team1Name}} </td>
+        <td>VS</td>
+        <td>{{scoreCard.team2Name}} </td>
+    </tr>
+    <tr>
+        <td>{{scoreCard.team1Score}}</td>
+        <td>:</td>
+        <td>{{scoreCard.team2Score}}</td>
+    </tr>
+</table>
+<h1>{{scoreCard.result}}</h1>
+</div>

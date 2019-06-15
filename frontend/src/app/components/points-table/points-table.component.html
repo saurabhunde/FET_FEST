@@ -1,12 +1,19 @@
-<table>
+<table class="table">
   <thead>
     <tr>
-      <th>teams</th>
-      <th>points</th>
+      <th>Teams</th>
+      <th>Points</th>
+      <th>Matches Played</th>
+      <th>Win</th>
+      <th>Lose</th>
     </tr>
   </thead>
-    <tr *ngFor="let points of pointsTable;">
+    <tr *ngFor="let points of pointsTable">
       <td>{{points.team}}</td>
       <td>{{points.points}}</td>
+      <td>{{points.M}}</td>
+      <td>{{points.W}}</td>
+      <td>{{points.L}}</td>
+
     </tr>
 </table>
